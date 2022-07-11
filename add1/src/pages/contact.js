@@ -2,11 +2,11 @@ import React from "react"
 import Layout from "../components/Layout"
 // import styled from "styled-components"
 
-const Recipies = () => {
+const Contact = () => {
   return (
     <>
       <Layout>
-        <h1>recipies page</h1>
+        <h1>contact page</h1>
       </Layout>
     </>
   )
@@ -15,4 +15,4 @@ const Recipies = () => {
 // const Wrapper = styled.section`
 //   color: blue;
 // `
-export default Recipies
+export default Contact

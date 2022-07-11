@@ -2,11 +2,11 @@ import React from "react"
 import Layout from "../components/Layout"
 // import styled from "styled-components"
 
-const tags = () => {
+const Tags = () => {
   return (
     <>
       <Layout>
-        <h1>tags</h1>
+        <h1>tags page</h1>
       </Layout>
     </>
   )
@@ -15,4 +15,4 @@ const tags = () => {
 // const Wrapper = styled.section`
 //   color: blue;
 // `
-export default tags
+export default Tags
