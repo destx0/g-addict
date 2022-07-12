@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import { FiAlignJustify } from "react-icons/fi"
 import logo from "../assets/images/logo.svg"
 const Navbar = () => {
+  const [show, setShow] = useState(false)
   return (
     <nav className="navbar">
       <div className="nav-center">
@@ -10,12 +11,17 @@ const Navbar = () => {
           <Link to="/">
             <img src={logo} alt="simply recipies" />
           </Link>
-          <button className="nav-btn">
+          <button className="nav-btn" onClick={() => setShow(!show)}>
             <FiAlignJustify />
           </button>
         </div>
-        <div className="nav-links show-links">
-          <Link to="/" className="nav-link" activeClassName="active-link">
+        <div className={show ? "nav-links show-links" : "nav-links"}>
+          <Link
+            to="/"
+            className="nav-link"
+            activeClassName="active-link"
+            onClick={() => setShow(false)}
+          >
             Home
           </Link>
 
@@ -23,20 +29,31 @@ const Navbar = () => {
             to="/recipies"
             className="nav-link"
             activeClassName="active-link"
+            onClick={() => setShow(false)}
           >
             Recipies
           </Link>
 
-          <Link to="/about" className="nav-link" activeClassName="active-link">
+          <Link
+            to="/about"
+            className="nav-link"
+            activeClassName="active-link"
+            onClick={() => setShow(false)}
+          >
             about
           </Link>
 
-          <Link to="/tags" className="nav-link" activeClassName="active-link">
+          <Link
+            to="/tags"
+            className="nav-link"
+            activeClassName="active-link"
+            onClick={() => setShow(false)}
+          >
             tags
           </Link>
 
           <div className="nav-link contact-link">
-            <Link to="/contact" className="btn">
+            <Link to="/contact" className="btn" onClick={() => setShow(false)}>
               contact
             </Link>
           </div>
