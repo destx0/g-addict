@@ -10,6 +10,12 @@ module.exports = {
     title: "Simply Recipies",
     description: "Nice and clean recipies site",
     author: "@bot",
+    person: { name: "birzu", age: 32 },
+    simpleData: ["item 1", "item 2"],
+    complexData: [
+      { name: "cirzu", age: 42 },
+      { name: "tirzu", age: 52 },
+    ],
   },
   plugins: [
     `gatsby-plugin-styled-components`,

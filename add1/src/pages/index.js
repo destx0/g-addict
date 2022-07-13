@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
 import { StaticImage } from "gatsby-plugin-image"
+import FetchData from "../examples/fetchData"
+import FetchDuta from "../examples/fetchDuta"
 // import { page, text } from "../examples/home.module.css"
 // import { ExampleButton } from "../examples/button"
 
@@ -25,6 +27,8 @@ export default function Home() {
               </div>
             </div>
           </header>
+          <FetchData />
+          <FetchDuta />
         </main>
       </Layout>
     </>
