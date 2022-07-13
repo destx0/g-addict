@@ -6,6 +6,11 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Simply Recipies",
+    description: "Nice and clean recipies site",
+    author: "@bot",
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-image`,

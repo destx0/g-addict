@@ -1,6 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/Layout"
+import { StaticImage } from "gatsby-plugin-image"
 // import { page, text } from "../examples/home.module.css"
 // import { ExampleButton } from "../examples/button"
 
@@ -8,7 +9,23 @@ export default function Home() {
   return (
     <>
       <Layout>
-        <h1>home page</h1>
+        <main className="page">
+          <header className="hero">
+            <StaticImage
+              className="hero-img"
+              src="../assets/images/main.jpeg"
+              alt="eggs"
+              placeholder="tracedSVG"
+              layout="fullWidth"
+            ></StaticImage>
+            <div className="hero-container">
+              <div className="hero-text">
+                <h1>simply recipies</h1>
+                <h4>no fluff,just recipies</h4>
+              </div>
+            </div>
+          </header>
+        </main>
       </Layout>
     </>
   )

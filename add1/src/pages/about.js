@@ -26,7 +26,12 @@ const About = () => {
 
               <Link className="btn">contact</Link>
             </article>
-            <StaticImage src="../assets/images/about.jpeg" alt="image" />
+            <StaticImage
+              src="../assets/images/about.jpeg"
+              alt="image"
+              className="about-img"
+              placeholder="tracedSVG"
+            />
           </section>
         </main>
       </Layout>
