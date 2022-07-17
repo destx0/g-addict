@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
+import AllRecipies from "../components/AllRecipies"
 // import styled from "styled-components"
 
 const Recipies = () => {
