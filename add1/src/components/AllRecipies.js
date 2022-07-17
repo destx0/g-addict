@@ -32,11 +32,10 @@ const AllRecipies = () => {
   //   const recipies = data.allContentfulRecipie.nodes
   //   console.log(recipies)
   return (
-    <div>
-      <h4>All recipies</h4>
+    <section className="recipes-container">
       <TagsList recipies={recipies} />
       <RecipiesList recipies={recipies} />
-    </div>
+    </section>
   )
 }
 
